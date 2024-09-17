@@ -1,0 +1,36 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()" #registerForm="ngForm">
+    <div>
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        required
+        [(ngModel)]="user.name"
+      />
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+        [(ngModel)]="user.email"
+      />
+      <br />
+
+      <button type="submit" class="submit">Register</button>
+    </div>
+  </form>
+</div>
+
+<div
+  *ngIf="message"
+  [ngClass]="{'alert-success': !isError, 'alert-danger': isError}"
+  class="alert"
+>
+  {{ message }}
+</div>

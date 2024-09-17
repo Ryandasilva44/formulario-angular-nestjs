@@ -1,0 +1,64 @@
+div > form {
+  border: 0.2em solid;
+  border: none;
+  border-radius: 1em;
+ background: #fff;
+ opacity: .7;
+  padding: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  label{
+    font-size: 1.3em;
+    margin-right: .2rem;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    min-width: 35vw;
+    margin-bottom: 0.3rem;
+  }
+
+  .submit {
+    border: .2em solid;
+    border: none;
+    background: red;
+    min-width: 37vw;
+    padding: 0.8em;
+    border-radius: 3em;
+    margin-top: .3rem;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+
+    &:hover{
+      cursor: pointer;
+      background: rgb(5, 5, 5);
+      color: #fff;
+    }
+
+  }
+}
+
+
+.alert{
+padding: .8em;
+margin-top: 1.5em;
+border-radius: .5em;
+}
+
+
+.alert-success{
+  color: #155724;
+  background: #d4edda;
+  border-color: #c3e6cb;
+}
+
+
+.alert-danger{
+  color: #721c24;
+  background: #f8d7da;
+  border-color: #f5c6cb;
+}
